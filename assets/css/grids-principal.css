@@ -1,0 +1,25 @@
+/* Nomenclatura de elementos */
+.cabecalho { grid-area: cabecalho; }
+.slider { grid-area: slider; }
+main { grid-area: conteudo; }
+article { grid-area: area-grafico; }
+.mapa { grid-area: mapa; }
+.contato { grid-area: contato; }
+.rodape { grid-area: rodape; }
+
+
+/* Criacao da grid principal */
+body {
+    display: grid;
+    grid-template-columns: 100%;
+    grid-template-rows: 100px 1fr auto auto 500px auto auto;
+    grid-template-areas:    'cabecalho cabecalho cabecalho'
+                            'slider slider slider'
+                            'conteudo conteudo conteudo'
+                            'area-grafico area-grafico area-grafico'
+                            'mapa mapa mapa'
+                            'contato contato contato'
+                            'rodape rodape rodape';
+}
+
+/* Posicionamento de elementos na grid */

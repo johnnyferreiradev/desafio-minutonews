@@ -1,0 +1,318 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+/* Cabecalho */
+.cabecalho {
+    box-sizing: border-box;
+    border-bottom: 4px solid #dc143c; 
+}
+
+.centro {
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo-news {
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.logo-news img {
+    height: 50px;
+    padding: 20px;
+}
+
+.menu-principal {
+    height: 100%;
+    display: flex;
+}
+
+.menu-principal li {
+    display: flex;
+    box-sizing: border-box;
+    height: 100%;
+    padding: 10px;
+    align-items: center;
+    width: 78px;
+}
+
+li a {
+    text-decoration: none;
+    color: #222;
+}
+
+li a:hover {
+    font-weight: bold;
+}
+
+.nav-sub-menu {
+    position: relative;
+}
+
+.sub-menu {
+    position: absolute;
+    top: 40px;
+    background-color: #fff;
+    border-bottom: 4px solid crimson; 
+    padding-top: 10px;
+    padding-left: 5px;
+    width: 200px;
+    display: none;
+    z-index: 11;
+}
+
+.sub-menu li {
+    padding: 0px;
+    padding-bottom: 8px;
+    width: 100%;
+}
+
+li.sub:hover .sub-menu {
+    display: block;
+}
+
+/***** Slider *****/
+.control-left,
+.control-rigth {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.control-left span,
+.control-rigth span {
+    font-size: 40px;
+    font-weight: bold;
+    color: #fff;
+    padding: 5px;
+    background-color: crimson;
+}
+
+.paginacao {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    z-index: 10;
+}
+
+.paginacao span {
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    box-sizing: border-box;
+    background-color: #fff;
+    border: 2px solid black;
+}
+
+.paginacao .ativo {
+    border: 2px solid crimson;
+}
+
+/* Imagens do slider */
+.slider figure {
+    position: relative;
+    /* overflow: hidden; */
+}
+
+.slider figure img {
+    width: 100%;
+    position: absolute;
+    top: 0px;
+    right: -100%;
+    transition: all .5s;
+    display: none;
+}
+
+.slider figure .img-ativa {
+    position: relative;
+    left: 0px;
+    display: block;
+}
+
+/* Conteudo / Matérias */
+
+/* Cabecalho */
+
+.cabecalho-conteudo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.cabecalho-conteudo select{
+    margin-right: 20px;
+    border: 2px solid #222;
+    background-color: #444;
+    color: #fff;
+    padding: 5px 0px;
+    font-weight: bold;
+}
+
+/* Cards */
+.card {
+    padding: 5px;
+    box-sizing: border-box;
+    position: relative;
+    border-left: 2px solid crimson;
+    margin-bottom: 40px;
+    margin-left: 40px;
+}
+
+.card .card-cabecalho {
+    display: flex;
+    justify-content: space-between;
+}
+
+.card .card-img img {
+    height: 100%;
+    width: 100%;
+    padding: 5px 0px;
+}
+
+.card .card-conteudo h4 {
+    padding: 5px 0px;
+}
+
+.card .card-conteudo p {
+    padding-bottom: 40px;
+    color: #444;
+}
+
+.card a {
+    position: absolute;
+    right: 10px;
+    bottom: 10px;
+    background-color: #fff;
+    z-index: 10;
+    text-decoration: none;
+    color: #222;
+    font-weight: bold;
+}
+
+.card:hover {
+    transition: all .1s;
+    box-shadow: 1px 1px 5px rgb(158, 158, 158);
+}
+
+/* Grafico */
+.grafico-cabecalho {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    border-top: 2px dashed black;
+}
+
+.grafico-cabecalho h3 {
+    padding: 40px 0px;
+}
+
+.container-g-d {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    padding: 40px 0px;
+}
+
+.grafico-centro {
+    border-bottom: 2px dashed black;
+}
+
+ /* Mapa */
+.mapa {
+    padding-top: 60px;
+}
+
+/* Contato / Formulário */
+.div-form {
+    background-color: crimson;
+}
+
+.div-contato,
+.div-form {
+    padding: 20px 0px;
+}
+
+.div-contato-conteudo {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    justify-content: space-around;
+}
+
+.div-contato-conteudo h4 {
+    padding-bottom: 20px;
+}
+
+.div-contato-conteudo ul {
+    list-style: none;
+}
+
+/* Formulário */
+.div-form-conteudo h4,
+.div-form-conteudo label {
+    color: #fff;
+    display: inline-block;
+    width: 100%;
+}
+
+.div-form-conteudo h4 {
+    padding-top: 10px;
+    padding-left: 20px;
+    padding-bottom: 20px;
+}
+
+.div-form-conteudo form {
+    padding-left: 20px;
+    width: 100%;
+}
+
+.div-form-conteudo label {
+    padding-top: 20px;
+}
+
+.div-form-conteudo input,
+.div-form-conteudo textarea {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.div-form-conteudo input {
+    height: 30px;
+}
+
+.div-form-conteudo #btn {
+    width: 20%;
+    margin-top: 10px;
+    float: right;
+    border: none;
+    background-color: #444;
+    color: #fff;
+    font-weight: bold;
+    padding: 10px;
+    border: 2px solid #222;
+    z-index: 15;
+}
+
+#btn:hover {
+    background-color: #222;
+    cursor: pointer;
+}
+
+/* Rodapé */
+.rodape {
+    background-color: #222;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+}
+
+.rodape p {
+    padding: 10px;
+}
